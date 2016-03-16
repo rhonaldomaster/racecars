@@ -1,0 +1,71 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ * require_tree .
+ * require_self
+ */
+$redcolor: #F00;
+@mixin aligncenter() {
+  text-align: center;
+}
+*{
+  font-size: 1rem;
+}
+body{
+  background-color: #C5E0FF;
+  font-family: sans-serif;
+}
+.playground{
+  margin: 5rem auto;
+  width: 80%;
+}
+.playground__field{
+  background: url("playground.png") repeat;
+  padding: 3rem;
+}
+.road{
+  background-color: #9B9B9B;
+  border-image: url("roadborder.png") 50 round;
+  border-left: 0;
+  border-right: 0;
+  position: relative;
+}
+.road__track{
+  padding: 1rem;
+}
+.road__track_up{
+  border-bottom: 2px solid #F8E71C;
+}
+.goal{
+  background-color: #BFBFBF;
+  color: $redcolor;
+  display: inline-block;
+  padding: 0.5rem 0;
+  position: absolute;
+  right: -55pt;
+  @include aligncenter();
+  top: 55pt;
+  transform: rotate(90deg);
+  width: 11.2rem;
+}
+.game-restart{
+  margin-top: 2rem;
+  @include aligncenter();
+}
+.button-restart{
+  background-color: #E7DC53;
+  border: 0.25rem solid #FFF;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  color: $redcolor;
+  padding: 0.5rem 2rem;
+}
