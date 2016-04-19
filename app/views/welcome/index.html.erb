@@ -2,26 +2,23 @@
     <article class="main">
       <section class="playground">
         <div class="playground__field">
-          <div class="road">
+          <div class="road js-road">
             <div class="road__track road__track_up">
-              <div class="car">
-                <img class="js-redcar" src=""/>
-              </div>
+              <img class="car js-redcar" src=""/>
             </div>
             <div class="road__track road__track_down">
-              <div class="car">
-                <img class="js-bluecar" src=""/>
-              </div>
+              <img class="car js-bluecar" src=""/>
             </div>
-            <div class="goal">GOAL</div>
+            <div class="goal js-goal">GOAL</div>
           </div>
-
         </div>
-        <div class="race-result js-raceResult">
-          
+        <div class="race-points js-race-points">
+          <div>Ganados azul: <span class="wins js-wins-blue">0</span></div>
+          <div>Ganados rojo: <span class="wins js-wins-red">0</span></div>
+          <div class="race-result js-raceResult"></div>
         </div>
         <div class="game-restart">
-          <button type="button" class="button-restart">Restart!</button>
+          <button type="button" class="button-restart js-btn-restart">Restart!</button>
         </div>
       </section>
     </article>

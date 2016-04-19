@@ -57,6 +57,20 @@ body{
   transform: rotate(90deg);
   width: 11.2rem;
 }
+.car{
+  background-color: transparent;
+}
+.race-result,.race-points{
+  margin-top: 1rem;
+  padding: 10px;
+}
+.race-points{
+  border: 0.25rem solid #FFF;
+  border-radius: 0.5rem;
+}
+.wins{
+  color: red;
+}
 .game-restart{
   margin-top: 2rem;
   @include aligncenter();
